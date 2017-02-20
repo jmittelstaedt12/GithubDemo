@@ -52,7 +52,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ajm-gR-K3D">
-                                                    <rect key="frame" x="8" y="44" width="76" height="73"/>
+                                                    <rect key="frame" x="8" y="44" width="76" height="76"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="76" id="Beh-pD-c6i"/>
+                                                        <constraint firstAttribute="height" constant="76" id="k35-u7-bvq"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nodejs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn3-1z-8xt">
                                                     <rect key="frame" x="8" y="19" width="38" height="15"/>
@@ -74,6 +78,7 @@
                                                 <constraint firstItem="Jn3-1z-8xt" firstAttribute="leading" secondItem="LNV-UH-FnW" secondAttribute="leading" constant="8" id="Few-Oo-p2u"/>
                                                 <constraint firstItem="jAl-PS-Gyd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qZ6-vB-AbF" secondAttribute="trailing" constant="8" id="Lgx-5Q-f0h"/>
                                                 <constraint firstItem="Jn3-1z-8xt" firstAttribute="top" secondItem="qZ6-vB-AbF" secondAttribute="bottom" constant="4" id="RZb-v0-Qo0"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ajm-gR-K3D" secondAttribute="bottom" constant="5" id="YAb-CZ-9F9"/>
                                                 <constraint firstItem="Ajm-gR-K3D" firstAttribute="leading" secondItem="LNV-UH-FnW" secondAttribute="leading" constant="8" id="Zjn-rp-Ha7"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1aO-Mi-iBK" secondAttribute="bottom" constant="8" id="aUf-9N-5Fq"/>
                                                 <constraint firstItem="wCV-JJ-7FF" firstAttribute="leading" secondItem="jAl-PS-Gyd" secondAttribute="trailing" constant="29" id="apu-hK-nA4"/>
@@ -82,11 +87,11 @@
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jn3-1z-8xt" secondAttribute="trailing" constant="8" id="g0t-Uo-9Is"/>
                                                 <constraint firstItem="Ajm-gR-K3D" firstAttribute="top" secondItem="Jn3-1z-8xt" secondAttribute="bottom" constant="10" id="hn5-hN-fi0"/>
                                                 <constraint firstItem="jAl-PS-Gyd" firstAttribute="top" secondItem="LNV-UH-FnW" secondAttribute="top" id="ieE-Up-jEC"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ajm-gR-K3D" secondAttribute="bottom" constant="8" id="nFW-0b-jAf"/>
                                                 <constraint firstItem="1aO-Mi-iBK" firstAttribute="leading" secondItem="Ajm-gR-K3D" secondAttribute="trailing" constant="8" symbolic="YES" id="xF4-eo-Cyl"/>
                                                 <constraint firstItem="qZ6-vB-AbF" firstAttribute="top" secondItem="LNV-UH-FnW" secondAttribute="top" id="xVN-HW-f3G"/>
                                                 <constraint firstItem="qZ6-vB-AbF" firstAttribute="leading" secondItem="LNV-UH-FnW" secondAttribute="leading" constant="8" id="yOW-Vm-brn"/>
                                                 <constraint firstItem="1aO-Mi-iBK" firstAttribute="leading" secondItem="LNV-UH-FnW" secondAttribute="leading" constant="92" id="yzx-xh-1Qs"/>
+                                                <constraint firstItem="1aO-Mi-iBK" firstAttribute="top" secondItem="jAl-PS-Gyd" secondAttribute="bottom" constant="29" id="zTp-lq-qts"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

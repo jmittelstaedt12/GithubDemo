@@ -17,6 +17,7 @@ class RepoResultsViewController: UIViewController, UITableViewDataSource{
     @IBOutlet weak var tableView: UITableView!
     var repos: [GithubRepo]!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +25,8 @@ class RepoResultsViewController: UIViewController, UITableViewDataSource{
         // Initialize the UISearchBar
         searchBar = UISearchBar()
         searchBar.delegate = self
+        tableView.estimatedRowHeight = 220
+        tableView.rowHeight = UITableViewAutomaticDimension
 
         // Add SearchBar to the NavigationBar
         searchBar.sizeToFit()
