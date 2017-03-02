@@ -23,6 +23,7 @@ class GithubRepo: CustomStringConvertible {
     var forks: Int?
     var repoDescription: String?
     
+ 
     
     // Initializes a GitHubRepo from a JSON dictionary
     init(jsonResult: NSDictionary) {
@@ -105,6 +106,6 @@ class GithubRepo: CustomStringConvertible {
             "\n\t[Forks: \(self.forks!)]" +
             "\n\t[Owner: \(self.ownerHandle!)]" +
             "\n\t[Avatar: \(self.ownerAvatarURL!)]" +
-            "\n\t[Description: \(self.repoDescription!)]"
+            "\n\t[Description: \(self.repoDescription ?? "no description")]"
     }
 }
