@@ -17,6 +17,7 @@ class SearchSettingsViewController: UIViewController {
     var searchSettingsSVC = GithubRepoSearchSettings()
     
     @IBAction func saveButton(_ sender: UIBarButtonItem) {
+        
         searchSettingsSVC.minStars = Int(starsCountLabel.text!)!
         self.delegate?.didSaveSettings(settings: searchSettingsSVC)
         dismiss(animated: true, completion: nil)
@@ -33,6 +34,8 @@ class SearchSettingsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+
     @IBAction func starsSlider(_ sender: UISlider) {
         starsCountLabel.text = String(Int(sender.value))
     }
