@@ -1,4 +1,4 @@
-# Lab 5 - *GithubDemo (With Search Settings)*
+# Project 4 - *GithubDemo (With Search Settings)*
 
 **GithubDemo (With Search Settings)** is a GitHub Repo search app using the [GitHub API](https://developer.github.com/v3/search/#search-repositories).
 
